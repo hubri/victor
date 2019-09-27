@@ -29,7 +29,7 @@ install: all
 	mkdir -p $(DESTDIR)$(PREFIX)/bin
 	mkdir -p $(DESTDIR)$(MANPREFIX)/man1
 	mkdir -p $(DESTDIR)$(DOCPREFIX)/victor
-	install -m 644 CHANGES README FAQ LICENSE $(DESTDIR)$(DOCPREFIX)/victor
+	install -m 644 README.md FAQ LICENSE $(DESTDIR)$(DOCPREFIX)/victor
 	install -m 775 victor $(DESTDIR)$(PREFIX)/bin
 	sed "s/VERSION/$(VERSION)/g" < victor.1 > $(DESTDIR)$(MANPREFIX)/man1/victor.1
 	chmod 644 $(DESTDIR)$(MANPREFIX)/man1/victor.1
