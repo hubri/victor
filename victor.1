@@ -1,0 +1,42 @@
+.TH VICTOR 1 victor\-VERSION
+.SH NAME
+victor \- a git-history negationism tool
+.SH SYNOPSIS
+.B victor
+.RB [ \-b
+.IR branch ]
+.IR commit1
+.IR commit2
+.RI [ arguments ...]]
+.PP
+.SH DESCRIPTION
+.B victor
+is a git-history negationism tool.
+.SH OPTIONS
+.TP
+.B \-b
+defines the branch to edit (default is the current branch).
+.TP
+.TP
+.B \-v
+prints version information to stderr, then exits.
+.TP
+.BI " commit1 commit2 " [ " arguments " "... ]"
+victor accepts a range of
+.I commits
+to edit.
+.SH CUSTOMIZATION
+.B victor
+can be customized by creating a custom config.h and (re)compiling the source
+code. This keeps it fast, secure and simple.
+.SH AUTHORS
+See the LICENSE file for the authors.
+.SH LICENSE
+See the LICENSE file for the terms of redistribution.
+.SH SEE ALSO
+.BR git-rebase (1),
+.BR git-rev-parse (1),
+.BR git-filter-branch (1)
+.SH BUGS
+See the TODO file in the distribution.
+
